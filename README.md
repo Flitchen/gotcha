@@ -1,5 +1,5 @@
 
-## Gotcha
+# Gotcha
 
 Gotcha is an engaging Android mobile chatting application designed to connect users, enabling discussions and interactions on a variety of topics. With a smooth user experience, Gotcha brings people together through real-time messaging and dynamic animations.
 ## Features
