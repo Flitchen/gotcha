@@ -58,6 +58,9 @@ export const AuthContextProvider = ({ children }) => {
       if (msg.includes("(auth/invalid-credential)")) {
         msg = "Incorrect username or password";
       }
+      if (msg.includes("(auth/invalid-email)")) {
+        msg = "Incorrect username or password";
+      }
 
       if (msg.includes("(auth/network-request-failed)")) {
         msg = "Network error";
@@ -116,7 +119,7 @@ export const AuthContextProvider = ({ children }) => {
 
   return (
     <AuthContext.Provider
-      value={{ user, isAuthenticated, login, signup, logout }}
+      value={{ user, isAuthenticated, login, signup, logout, updateUserData }}
     >
       {children}
     </AuthContext.Provider>

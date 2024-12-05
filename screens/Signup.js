@@ -77,7 +77,7 @@ export default function Signup() {
       Toast.show(response.msg);
       return;
     }
-    navigation.replace("ChatStack");
+    navigation.replace("Login");
   };
   const navigateToLogin = () => {
     setUserInfo({

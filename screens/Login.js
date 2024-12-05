@@ -166,7 +166,7 @@ export default function Login() {
             className="w-full"
           >
             <TouchableOpacity
-              className="flex-row justify-center items-center space-x-4 rounded-2xl p-3 bg-blue-400"
+              className="flex-row justify-center items-center space-x-4 rounded-lg p-3 bg-blue-400"
               disabled={loading}
               onPress={handleLogin}
             >
@@ -181,11 +181,11 @@ export default function Login() {
           </Animated.View>
           <Animated.View
             entering={FadeInDown.delay(800).duration(1000).springify()}
-            className="flex-row justify-center"
+            className="flex-row justify-center items-center"
           >
-            <Text style={{ fontSize: hp(1.8) }}>Don't have an account? </Text>
+            <Text style={{ fontSize: hp(2.4) }}>Don't have an account? </Text>
             <TouchableOpacity onPress={navigateToSignUp}>
-              <Text style={{ fontSize: hp(1.8) }} className="text-blue-600">
+              <Text style={{ fontSize: hp(2.4) }} className="text-blue-600">
                 Sign up
               </Text>
             </TouchableOpacity>

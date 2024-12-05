@@ -1,8 +1,5 @@
-import { View, Text, FlatList, TouchableOpacity } from "react-native";
-import React, { useState } from "react";
-import { Image } from "expo-image";
-import { blurhash } from "../utils/elements";
-import { doc, getDoc } from "firebase/firestore";
+import { View, Text, FlatList } from "react-native";
+import React from "react";
 import FriendItem from "./friendItem";
 import { heightPercentageToDP as hp } from "react-native-responsive-screen";
 

@@ -17,6 +17,7 @@ import {
 import {
   ArrowLeftStartOnRectangleIcon,
   EllipsisVerticalIcon,
+  LockClosedIcon,
   PlusIcon,
   UserCircleIcon,
 } from "react-native-heroicons/outline";
@@ -121,17 +122,29 @@ const MoreOptions = ({
             handleTouchablePress();
           }}
         >
-          <UserCircleIcon size={hp(2.71)} color="gray" />
-          <Text className="text-neutral-600 mr-1" style={{ fontSize: hp(2) }}>
+          <UserCircleIcon size={hp(4)} color="gray" />
+          <Text className="text-neutral-600 mr-1" style={{ fontSize: hp(2.4) }}>
             View Profile
+          </Text>
+        </TouchableOpacity>
+        <TouchableOpacity
+          className=" flex-row space-x-5 items-center"
+          onPress={() => {
+            navigation.navigate("PasswordChange");
+            handleTouchablePress();
+          }}
+        >
+          <LockClosedIcon size={hp(4)} strokeWidth={2} color="gray" />
+          <Text className="text-neutral-600 mr-1" style={{ fontSize: hp(2.4) }}>
+            Change Password
           </Text>
         </TouchableOpacity>
         <TouchableOpacity
           onPress={handleLogout}
           className=" flex-row space-x-5 items-center"
         >
-          <ArrowLeftStartOnRectangleIcon size={hp(2.71)} color="gray" />
-          <Text className="text-neutral-600 mr-1" style={{ fontSize: hp(2) }}>
+          <ArrowLeftStartOnRectangleIcon size={hp(4)} color="gray" />
+          <Text className="text-neutral-600 mr-1" style={{ fontSize: hp(2.4) }}>
             Logout
           </Text>
         </TouchableOpacity>

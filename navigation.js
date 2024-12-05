@@ -9,6 +9,7 @@ import {
   Splash,
   AddFriend,
   UserProfile,
+  PasswordChange,
 } from "./screens";
 
 const Stack = createNativeStackNavigator();
@@ -41,6 +42,7 @@ const ChatStack = () => {
         }}
       />
       <Stack.Screen name="UserProfile" component={UserProfile} />
+      <Stack.Screen name="PasswordChange" component={PasswordChange} />
     </Stack.Navigator>
   );
 };
